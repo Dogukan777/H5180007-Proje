@@ -1,9 +1,10 @@
+
+
 var veriler= [
 
     { 
         id:1,
         ad:"Eğitim ve Denetim Uzun Dönem Stajyeri <br/>Çelik Motor Ticaret A.Ş.<br/>İstanbul(Asya) </br>",
-        
        
         Genelnitelikler:" <li>3.sınıf ve 4.sınıf Üniversite Öğrencisi,</li><br/>"+
      "<li>MS Office programlarına hâkim,</li><br/>" +
@@ -206,15 +207,17 @@ PozisyonBigileri:"<span class='y7'>Firma Sektörü:</span> Bilişim, Bilgi Tekno
 ]
 function tasarimGetir(){ 
 
-var listeleme='<div class="enust"> <a href="index.html"><div class="logo"></div></a><!--logo div--><div class="menu"> <div class="menu1">İşveren tarafından ilan yayınla</div>  <div class="menu1"><a href="stajerilanlari.html">Stajer İlanı Listeleme</a></div><div class="menu1">Stajer tarafından İlan yayınla</div><div class="uyeOl"><a href="UyeGiris.html">Giris Yap</a></div> <div class="girisYap"><a href="UyeOl.html"> Uye Ol</a></div></div><!--menu div--></div><!--enust-->'+      
+var listeleme2='<div class="enust"> <a href="index.html"><div class="logo"></div></a><!--logo div--><div class="menu"> <div class="menu1"><a href="stajerilanlari.html">Stajer İlanlarını Listeleme </a></div>  <div class="menu1"><a href="stajilanlari.html">Staj İlanlarını Listeleme</a></div><div class="menu1">Stajer tarafından İlan yayınla</div><div class="girisYap"><a href="UyeGiris.html">Giris Yap</a></div> <div class="uyeOl"><a href="UyeOl.html"> Uye Ol</a></div></div><!--menu div--></div><!--enust-->'+      
 '<div class="stajerilanlariGenel"  id="stajerilanlariGenel">'+ 
 '<div class="filtreler"><input type="text" id="aramayap"><div id="ara">ARA</div><div class="filtre"> Ülke-Şehir-İlçe</div><div class="filtre">Firma Sektörü</div><div class="filtre">İlan Kategorileri</div><div class="filtre">Pozisyon</div><div class="filtre">Departman</div><div class="filtre">Çalışma Şekli</div><div class="filtre">Eğitim Seviyesi</div><div class="filtre">İş Tecrübesi</div></div><!--filtrelerdiv-->'+ 
-'<div class="ilanlar" id="ilanlar"><span class="y8">Stajer ilanları</span><hr><div class="ilan1"><span class="y3" onclick="veri1()">'+ veriler[0].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri2()">'+ veriler[1].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri3()">'+ veriler[2].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri4()">'+ veriler[3].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri5()">'+ veriler[4].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri6()">'+ veriler[5].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri7()">'+ veriler[6].ad + '</span><hr></div><div class="ilan1"><span class="y3" onclick="veri8()">'+ veriler[7].ad + '</span><hr></div></div></div><div class="alt"><div class="alt1">Hakkkımızda</div><div class="alt1">İletişim</div><div class="alt1">Yardim</div><div class="alt2"><img src="img/icon14.png"><img src="img/icon15.png"><img src="img/icon16.png"><img src="img/icon18.png"><img src="img/icon19.png"></div></div><!--alt div-->'
-document.body.innerHTML=listeleme;
+'<div class="ilanlar" id="ilanlar"><span class="y8">Staj İlanları</span><hr><div class="ilan1"><span class="y3" onclick="veri1()">'+ veriler[0].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri2()">'+ veriler[1].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri3()">'+ veriler[2].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri4()">'+ veriler[3].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri5()">'+ veriler[4].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri6()">'+ veriler[5].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri7()">'+ veriler[6].ad + '</span><hr></div><div class="ilan1"><span class="y3" onclick="veri8()">'+ veriler[7].ad + '</span><hr></div></div></div><div class="alt"><div class="alt1"><a href="hakkimizda.html">Hakkkımızda</a></div><div class="alt1"><a href="iletisim.html">İletişim</a></div><div class="alt1">Yardim</div><div class="alt2"><img src="img/icon14.png"><img src="img/icon15.png"><img src="img/icon16.png"><img src="img/icon18.png"><img src="img/icon19.png"></div></div><!--alt div-->'
+document.body.innerHTML=listeleme2;
 }
 
 function veri1(){
+    
 document.getElementById("stajerilanlariGenel").innerHTML="";
+
 document.getElementById("stajerilanlariGenel").innerHTML='<div class="ilanlarGenel">'+
 '<div class="resim"><img src="img/celikmotor.png"></div>' +
 '<div class="bilgiler">'+
@@ -364,4 +367,91 @@ function uyeGiris(){
         
         document.getElementById("kullaniciAdi").value="Kullanici Adiniz"
     }
+}
+
+function admin(){
+    
+
+
+  var admin2= '<div id="admingenel"> <div class="enust"> <a href="admin.html"> <div class="logo"></div></a><!--logo div--><div class="menu"><div class="girisYap"><a href="../UyeGiris.html">Giris Yap</a></div>    <div class="uyeOl"><a href="../UyeOl.html"> Uye Ol</a></div>    </div><!--menu div-->     </div> <!--enust div-->'+                   
+  '<div id="orta10"><div id="orta10sol"><div id="kontrol3"></div><div id="kontrol4"></div>'+
+  '<div class="ilanlar" id="ilanlar"><span class="y8">Stajer ilanları</span><hr><div class="ilan1"><span class="y3" onclick="veri20()">'+ veriler[0].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri21()">'+ veriler[1].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri22()">'+ veriler[2].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri23()">'+ veriler[3].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri24()">'+ veriler[4].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri25()">'+ veriler[5].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri26()">'+ veriler[6].ad + '</span><hr></div><div class="ilan1"><span class="y3" onclick="veri27()">'+ veriler[7].ad + '</span><hr></div></div>'
+  '</div>'+
+  
+  '<div id="orta10sag">'+
+  '</div>' +
+  
+  
+  '</div><!--orta10div-->'
+  '</div>'
+   
+    document.body.innerHTML=admin2
+}
+function veri20(){
+    document.getElementById("orta10").innerHTML="";
+
+    document.getElementById("orta10").innerHTML='<div class="orta10">'+
+    '<div class="resim"><img src="../img/celikmotor.png"></div>' +
+    '<div class="bilgiler">'+
+    '<div class="nitelikler">'+  '<div class="y4">Genel Nitelikler</div><br/>'+veriler[0].Genelnitelikler +'</div>'+
+    '<div class="istanitim"><span class="y5">İŞ TANITIMI</span><br/><br/>'+ veriler[0].isTanitim + '</div>'+
+    '<div class="adaykriterleri"><span class="y6">Aday Kriterleri</span><br/><br/>'+ veriler[0].AdayKriterleri+ '</div>'+
+    '<div class="pozisyonbilgileri"><span class="y6">PozisyonBilgileri</span><br/><br/>'+veriler[0].PozisyonBigileri + '</div>'+
+    '</div>'+
+    '</div>'
+
+}
+
+var listeleme=[
+
+    {
+ad:"Doğukan BAŞ",
+okul:"Medipol Üniversitesi(Öğrenci)",
+bolum:"Bilgisiyar Mühendisliği",
+yabanciDil:"İngilizce",
+iletisimbilgileri:"Tel No:05324324321, E-posta:dgknn.bas@gmail.com",
+AdresBilgileri:"Celiktepe Mah Arnavut sokak No:5 Kağıthane/İstanbul",
+
+
+    },
+
+    {
+        ad:"Özge ÇELİK",
+        okul:"Sakarya Üniversitesi(Öğrenci)",
+        bolum:"Dış Ticaret",
+        yabanciDil:"İngilizce(Orta Seviye),Rusca(Orta Seviye)",
+        iletisimbilgileri:"Tel No:05343213211, E-posta:ozge@gmail.com",
+     
+        AdresBilgileri:" Tuna Mah 677.sokak No:28 Esenler/İstanbul ",
+
+
+    },
+]
+function stajerilanlari(){
+
+    var listeleme3='<div class="enust"> <a href="index.html"><div class="logo"></div></a><!--logo div--><div class="menu"> <div class="menu1"><a href="stajerilanlari.html">Stajer İlanlarını Listeleme </a></div>  <div class="menu1"><a href="stajilanlari.html">Staj İlanlarını Listeleme</a></div><div class="menu1">Stajer tarafından İlan yayınla</div><div class="girisYap"><a href="UyeGiris.html">Giris Yap</a></div> <div class="uyeOl"><a href="UyeOl.html"> Uye Ol</a></div></div><!--menu div--></div><!--enust-->' +
+    '<div class="stajerGenel"  id="stajerGenel">'+ 
+'<div class="filtreler2"></div><!--filtreler2 div-->'+
+'<div class="orta11" id="orta11">Stajer İlanları<hr/><div class="stajerilan1">Stajer: <span class="y12" onclick="veri30()">'+listeleme[0].ad+'<br/>'+listeleme[0].okul +'<br/>'+listeleme[0].bolum +'</span></div><hr/>'+
+'<hr/><div class="stajerilan1">Stajer: <span class="y12" onclick="veri31()">'+listeleme[1].ad+'<br/>'+listeleme[1].okul +'<br/>'+listeleme[1].bolum +'</span></div><hr/>'+
+'</div><!--orta11div--></div>'+
+'<div class="alt"><div class="alt1"><a href="hakkimizda.html">Hakkkımızda</a></div><div class="alt1"><a href="iletisim.html">İletişim</a></div><div class="alt1">Yardim</div><div class="alt2"><img src="img/icon14.png"><img src="img/icon15.png"><img src="img/icon16.png"><img src="img/icon18.png"><img src="img/icon19.png"></div></div><!--alt div-->'
+
+
+    document.body.innerHTML=listeleme3;
+}
+
+function veri30(){
+
+    document.getElementById("stajerGenel").innerHTML="";
+    document.getElementById("stajerGenel").innerHTML='<div class="stajerinresmi"></div>'+
+    '<div class="stajerbilgileri"><span class="y14">Ad Soyad: </span>'+ listeleme[0].ad+'<br/><span class="y14">Okul:</span> '+listeleme[0].okul+'<br/><span class="y14">Bölüm:</span>  '+listeleme[0].bolum+'<br/><span class="y14">Yabancı Dil:</span>  '+listeleme[0].yabanciDil+'<br/><span class="y14">İletisim Bilgieri:</span>  '+listeleme[0].iletisimbilgileri+'<br/><span class="y14">Adres Bilgieri:</span>  '+listeleme[0].AdresBilgileri+'</div>'
+}
+
+
+function veri31(){
+   
+    document.getElementById("stajerGenel").innerHTML="";
+    document.getElementById("stajerGenel").innerHTML='<div class="stajerinresmi"></div>'+
+    '<div class="stajerbilgileri"><span class="y14">Ad Soyad: </span>'+ listeleme[1].ad+'<br/><span class="y14">Okul:</span> '+listeleme[1].okul+'<br/><span class="y14">Bölüm:</span>  '+listeleme[1].bolum+'<br/><span class="y14">Yabancı Dil:</span>  '+listeleme[1].yabanciDil+'<br/><span class="y14">İletisim Bilgieri:</span>  '+listeleme[1].iletisimbilgileri+'<br/><span class="y14">Adres Bilgieri:</span>  '+listeleme[1].AdresBilgileri+'</div>'
 }
