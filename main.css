@@ -6,8 +6,8 @@
 .menu1 a{color:black;text-decoration:none}
 .logo{width:200px;height:60px;float:left;background-image:url("img/logo.png");background-size:100%;background-repeat:no-repeat;margin-left:3%;margin-top:1%}
 
-.uyeOl{width:120px;height:70px;float:left;margin-left:25px;color:black;font-size:30px;border:1px solid blue;}
-.girisYap{width:140px;height:70px;float:left;color:black;font-size:30px;border:1px solid red;}
+.uyeOl{width:120px;height:70px;float:left;margin-left:25px;color:black;font-size:30px;}
+.girisYap{width:140px;height:70px;float:left;color:black;font-size:30px;}
 .UyeGirisArkaPlan{width:100%;height:650px;}
 .uyeGiris{width:340px;height:220px;margin:0 auto;background:white;opacity:0.7;text-decoration:none;}
 a .uyegiris{text-decoration: none}
@@ -30,7 +30,7 @@ a:hover .uyeGiris{opacity:1}
 .orta4 img{float:left;margin-top:15px;margin-left:50px;}
 .İsBul{width:600px;height:50px;border:1px solid grey;margin-top:60px;margin-left:25px;float:left;font-size:25px;color:grey;padding-left:15px}
 .stajYeriBul{width:120px;height:45px;background-color:black;float:left;margin-top:60px;border-radius:3px;color:white;font-size:25px;text-align: center;padding-top:10px}
-.UyeGirisOrta{width:100%;height:400px;background-image:url("img/isyeri.jpg");background-repeat:no-repeat;padding-top:150px}
+.UyeGirisOrta{width:100%;height:60%;background-image:url("img/isyeri.jpg");background-repeat:no-repeat;padding-top:150px;background-size:100%}
 a:hover .kullaniciAdi{opacity:0.9;}
 a:hover .sifre{opacity:0.9;}
 a .kullaniciAdi{text-decoration:none;}
@@ -46,17 +46,18 @@ a .kullaniciAdi{text-decoration:none;}
 #kontrol4{display:none;}
 
 
-.stajerilanlariGenel{width:100%;height:1190px;margin:0 auto}
+.stajerilanlariGenel{width:100%;height:1190px;margin:0 auto;}
 .ilanlar{width:60%;height:950px;float:left;margin-left:3%;color:black;font-size:20px;padding:2%;margin-top:30px;}
 .ilanlar2{width:90%;height:950px;float:left;margin-left:3%;color:black;font-size:20px;padding:2%;margin-top:30px;}
 
-.ilan1{width:100%;height:100px;margin-top:1%;border:1px solid black}
+.ilan1{width:100%;height:100px;margin-top:1%;}
 
 
 .y8{color:blue;font-size:24px;font-weight:550}
 
 .ilanlarGenel{width:80%;height:1000px;margin-left:10%}
 .resim{width:30%;height:400px;float:left;margin-top:40px;}
+.resim2{width:25%;height:400px;float:left;margin-top:40px;margin-left:5%}
 .bilgiler{width:69%;height:1000px;float:left}
 .nitelikler{width:80%;height:360px;margin:0 auto;margin-top:5%;color:grey;font-size:17px;}
 .nitelikler li{margin-bottom:-9px}
@@ -94,11 +95,11 @@ a .kullaniciAdi{text-decoration:none;}
 
 
 
-#admingenel{width:100%;height:1450px;border:1px solid red;margin:0 auto;}
+#admingenel{width:100%;height:1320px;margin:0 auto;}
 #orta10{width:100%;height:1100px;}
-#orta10sol{width:40%;height:1300px;float:left;border:1px solid blue}
-#orta10sag{width:48%;height:1100px;float:left;margin-left:3%}
-#sil{width:30px;height:30px;background-color:black;}
+#orta10sol{width:31%;height:1220px;float:left;margin-left:10%}
+#orta10sag{width:31%;height:1220px;float:left;margin-left:3%;}
+
 
 
 .filtreler2{width:25%;height:600px;float:left;margin:25px}
@@ -110,13 +111,41 @@ a .kullaniciAdi{text-decoration:none;}
 .y14{font-weight:550}
 
 .ekle{width:80px;background:blue;height:30px;color:white;font-size:20px;border-radius:3px;padding:10px;margin:10px}
-.kutu1{width:100%;height:700px;border:1px solid blue;}
-.input1{width:250px;height:30px;float:left;margin-right:50px;font-size:16px;margin-top:20px}
-.ilanekle{width:100px;height:50px;background:blue;color:white;float:left;margin-left:350px;margin-top:10px}
+.kutu1{width:100%;height:700px;}
+.input1{width:250px;height:30px;float:left;margin-right:50px;font-size:16px;margin-top:5px}
+.ilanekle{width:86px;height:38px;background:blue;color:white;float:left;margin-top:30px;border-radius:3px;font-size:18px;padding-top:12px;padding-left:14px}
 .input{float:left}
 #cizgi4{display:none}
 #ilansil{width:60px;background:blue;height:30px;color:white;font-size:20px;border-radius:3px;padding:10px;margin:10px}
-.uyeler{width:300px;height:70px;border:1px solid red;float:left;margin-left:15%}
+.uyeler{width:300px;height:70px;float:right;margin-right:5%}
 #kontrol6{display:none}
-.kutu2{width:300px;height:1000px;border:1px solid red;float:left}
-.o2{float:left}
+.kutu2{width:300px;height:240px;float:left;}
+.o2{float:left;margin-top:10px}
+#ekle2{width:80px;background:blue;height:30px;color:white;font-size:20px;border-radius:3px;padding:10px;margin:10px}
+.kutu3{width:300px;height:300px;float:left;margin-left:20%;margin-top:5%;}
+.stajereklegenel{width:100%;height:600px;;}
+.kutu4{width:300px;height:300px;float:left;margin-left:2%;margin-top:5%}
+.y3 a{text-decoration:none;color:black}
+#ilan3 a{text-decoration:none;color:black}
+.o3 a{text-decoration:none;color:black}
+.ilan1 a{text-decoration:none;color:black}
+.y12 a{text-decoration:none;color:black}
+.input1{max-width: 290px;max-height:50px;min-width:250px;min-height:30px}
+.input10{margin-top:25px;float:left;margin-left:10%}
+#input4{width:300px;height:200px;min-width:250px;min-height:150px;max-width:400px;max-height:210px}
+.kutu5{width:470px;height:260px;float:left;margin-left:120px;}
+.kutu6{width:470px;height:420px;;float:left;margin-left:5%}
+#input5{width:300px;height:200px;min-width:250px;min-height:150px;max-width:400px;max-height:350px}
+.kutu7{width:350px;height:420px;float:left;margin-left:20px;margin-top:10px}
+.o7{font-weight:550;float:left}
+#input6{width:300px;height:30px;max-width:340px;max-height:50px;min-width:200px;min-height:25px;float:left}
+.o8{float:left}
+.kutu8{width:350px;height:420px;float:left;margin-left:20px;}
+#input7{width:300px;height:30px;max-width:340px;max-height:50px;min-width:200px;min-height:25px;float:left}
+#input8{width:300px;height:30px;max-width:340px;max-height:50px;min-width:200px;min-height:25px;float:left}
+#input9{width:300px;height:30px;max-width:340px;max-height:50px;min-width:200px;min-height:25px;float:left}
+#input90{width:300px;height:30px;max-width:340px;max-height:50px;min-width:200px;min-height:25px;float:left}
+#input91{width:300px;height:30px;max-width:340px;max-height:50px;min-width:200px;min-height:25px;float:left}
+#input92{width:300px;height:30px;max-width:340px;max-height:50px;min-width:200px;min-height:25px;float:left}
+.y29{text-decoration:none;font-size:25px;color:black;text-align:center;margin-left:50px;margin-top:10px;width:250px;height:50px;float:left}
+.y29 a{text-decoration:none;color:black}

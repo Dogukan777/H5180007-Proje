@@ -210,16 +210,16 @@ PozisyonBigileri:"<span class='y7'>Firma Sektörü:</span> Bilişim, Bilgi Tekno
 
 function tasarimGetir(){ 
 
-var listeleme2='<div class="enust"> <a href="index.html"><div class="logo"></div></a><!--logo div--><div class="menu"> <div class="menu1"><a href="stajerilanlari.html">Stajer İlanlarını Listeleme </a></div>  <div class="menu1"><a href="stajilanlari.html">Staj İlanlarını Listeleme</a></div><div class="menu1">Stajer tarafından İlan yayınla</div><div class="girisYap"><a href="UyeGiris.html">Giris Yap</a></div> <div class="uyeOl"><a href="UyeOl.html"> Uye Ol</a></div></div><!--menu div--></div><!--enust-->'+      
+var listeleme2='<div class="enust"> <a href="index.html"><div class="logo"></div></a><!--logo div--><div class="menu"> <div class="menu1"><a href="stajerilanlari.html">Stajer İlanlarını Listeleme </a></div>  <div class="menu1"><a href="stajilanlari.html">Staj İlanlarını Listeleme</a></div>  <div class="uyeler" id="uyeler"><div class="girisYap"><a href="UyeGiris.html">Giris Yap</a></div> <div class="uyeOl"><a href="UyeOl.html"> Uye Ol</a></div></div></div><!--menu div--></div><!--enust-->'+      
 '<div class="stajerilanlariGenel"  id="stajerilanlariGenel">'+ 
 '<div class="filtreler"><input type="text" id="aramayap"><div id="ara">ARA</div><div class="filtre"> Ülke-Şehir-İlçe</div><div class="filtre">Firma Sektörü</div><div class="filtre">İlan Kategorileri</div><div class="filtre">Pozisyon</div><div class="filtre">Departman</div><div class="filtre">Çalışma Şekli</div><div class="filtre">Eğitim Seviyesi</div><div class="filtre">İş Tecrübesi</div></div><!--filtrelerdiv-->'+ 
-'<div class="ilanlar" id="ilanlar"><span class="y8">Staj İlanları</span><hr><div class="ilan1"><span class="y3" onclick="veri1()">'+ veriler[0].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri2()">'+ veriler[1].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri3()">'+ veriler[2].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri4()">'+ veriler[3].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri5()">'+ veriler[4].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri6()">'+ veriler[5].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri7()">'+ veriler[6].ad + '</span><hr></div><div class="ilan1"><span class="y3" onclick="veri8()">'+ veriler[7].ad + '</span><hr>'+
-'<div class="ilan1">'+
+'<div class="ilanlar" id="ilanlar"><span class="y8">Staj İlanları</span><hr><div class="ilan1"><span class="y3" onclick="veri1()"><a href="#">'+ veriler[0].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri2()"><a href="#">'+ veriler[1].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri3()"><a href="#">'+ veriler[2].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri4()"><a href="#">'+ veriler[3].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri5()"><a href="#">'+ veriler[4].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri6()"><a href="#">'+ veriler[5].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri7()"><a href="#">'+ veriler[6].ad + '</a></span><hr></div><div class="ilan1"><span class="y3" onclick="veri8()"><a href="#">'+ veriler[7].ad + '</a></span><hr>'+
+'<div class="ilan1"><span class="y26" onclick="veri52()"><a href="#">'+
 localStorage.getItem('input1')+'<br/>'+
   localStorage.getItem('input2')+'<br/>'+
   localStorage.getItem('input3')+'<br/>'+
-  localStorage.getItem('cizgi')+'<br/>'+
-  '</div>'+
+ 
+  '</a></span></div>'+
 '</div></div></div><div class="alt"><div class="alt1"><a href="hakkimizda.html">Hakkkımızda</a></div><div class="alt1"><a href="iletisim.html">İletişim</a></div><div class="alt1">Yardim</div><div class="alt2"><img src="img/icon14.png"><img src="img/icon15.png"><img src="img/icon16.png"><img src="img/icon18.png"><img src="img/icon19.png"></div></div><!--alt div-->'
 document.body.innerHTML=listeleme2;
 
@@ -373,11 +373,11 @@ function admin(){
  
 
 
-  var admin2= '<div id="admingenel"> <div class="enust"> <a href="admin.html"> <div class="logo"></div></a><!--logo div--><div class="menu"><div class="girisYap"><a href="../UyeGiris.html">Giris Yap</a></div>    <div class="uyeOl"><a href="../UyeOl.html"> Uye Ol</a></div>    </div><!--menu div-->     </div> <!--enust div-->'+                   
+  var admin2= '<div id="admingenel"> <div class="enust"> <a href="../index.html"> <div class="logo"></div></a><!--logo div--><div class="menu"><div class="y29"><a href="admin.html">Admin paneli anasayfa için tıklayınız</a></div><div class="uyeler" id="uyeler"><div class="girisYap"><a href="../UyeGiris.html">Giris Yap</a></div>    <div class="uyeOl"><a href="../UyeOl.html"> Uye Ol</a></div></div>    </div><!--menu div-->     </div> <!--enust div-->'+                   
   '<div id="orta10"><div id="orta10sol"><div id="kontrol3"></div><div id="kontrol4"></div>'+
-  '<div class="ilanlar2" id="ilanlar"><span class="y8">Stajer ilanları</span><hr><div class="ilan1"><span class="y3" onclick="veri20()">'+ veriler[0].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri21()">'+ veriler[1].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri22()">'+ veriler[2].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri23()">'+ veriler[3].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri24()">'+ veriler[4].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri25()">'+ veriler[5].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri26()">'+ veriler[6].ad + '</span><hr></div><div class="ilan1"><span class="y3" onclick="veri27()">'+ veriler[7].ad + '</span><hr></div>'+
+  '<div class="ilanlar2" id="ilanlar"><span class="y8">Staj ilanları</span><hr><div class="ilan1"><span class="y3" onclick="veri20()"><a href="#">'+ veriler[0].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri21()"><a href="#">'+ veriler[1].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri22()"><a href="#">'+ veriler[2].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri23()"><a href="#">'+ veriler[3].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri24()"><a href="#">'+ veriler[4].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri25()"><a href="#">'+ veriler[5].ad + '</a></span></div><hr><div class="ilan1"><span class="y3" onclick="veri26()"><a href="#">'+ veriler[6].ad + '</a></span><hr></div><div class="ilan1"><span class="y3" onclick="veri27()"><a href="#">'+ veriler[7].ad + '</span><hr></div>'+
 
-'<div class="ilan1" id="ilan3">'+   
+'<div class="ilan1" id="ilan3"><a href="#"><span class="y25" onclick="veri50()">'+   
 
 localStorage.getItem('input1')+'<br/>'+
 localStorage.getItem('input2')+'<br/>'+
@@ -388,16 +388,26 @@ localStorage.getItem('input3')+'<br/>'+
 
 
 
-'</div>'+
-'<a href="../ilanekle.html"><div class="ekle" >İlan Ekle</div></a></div></div>'+
+'</span></a></div>'+
+'<a href="../stajekle.html"><div class="ekle" >İlan Ekle</div></a></div>'+
 
 
   
   
-  '</div>'
+  '</div>'+
   
   '<div id="orta10sag">'+
-  '</div>' +
+  '<div class="ilanlar2" id="ilanlar"><span class="y8">Stajer ilanları</span><hr><div class="ilan1"><span class="o3" onclick="veri40()"><a href="#">'+listeleme[0].ad+'<br/>'+listeleme[0].okul+'<br/>'+listeleme[0].bolum+ '</a></span></div><hr/><div class="ilan1"><span class="o3" onclick="veri41()"><a href="#"> '+listeleme[1].ad+'<br/>'+listeleme[1].okul+'<br/>'+listeleme[1].bolum+'</a></span></div><hr/>'+
+  '<div class="ilan1"><a href="#"><span class="y15" onclick="veri42()">'+
+  localStorage.getItem('input11')+'<br/>'+
+localStorage.getItem('input12')+'<br/>'+
+localStorage.getItem('input13')+'<br/>'+
+
+  '</span></a></div><hr/>'+
+  '<a href="../stajerekle.html"><div id="ekle2" ">İlan Ekle</div></a>'+
+
+
+  '</div><!--orta10sag-->' +
   
   
   '</div><!--orta10div-->'
@@ -410,7 +420,7 @@ function veri20(){
     document.getElementById("orta10").innerHTML="";
 
     document.getElementById("orta10").innerHTML='<div class="orta10">'+
-    '<div class="resim"><img src="../img/celikmotor.png"></div>' +
+    '<div class="resim2"><img src="../img/celikmotor.png"></div>' +
     '<div class="bilgiler">'+
     '<div class="nitelikler">'+  '<div class="y4">Genel Nitelikler</div><br/>'+veriler[0].Genelnitelikler +'</div>'+
     '<div class="istanitim"><span class="y5">İŞ TANITIMI</span><br/><br/>'+ veriler[0].isTanitim + '</div>'+
@@ -419,6 +429,152 @@ function veri20(){
     '</div>'+
     '</div>'
 
+}
+function veri21(){
+    document.getElementById("orta10").innerHTML="";
+
+    document.getElementById("orta10").innerHTML='<div class="orta10">'+
+    '<div class="resim2"><img src="../img/diversey.png"></div>' +
+    '<div class="bilgiler">'+
+    '<div class="nitelikler">'+  '<div class="y4">Genel Nitelikler</div><br/>'+veriler[1].Genelnitelikler +'</div>'+
+    '<div class="istanitim2"><span class="y5">İŞ TANITIMI</span><br/><br/>'+ veriler[1].isTanitim + '</div>'+
+    '<div class="adaykriterleri"><span class="y6">Aday Kriterleri</span><br/><br/>'+ veriler[1].AdayKriterleri+ '</div>'+
+    '<div class="pozisyonbilgileri"><span class="y6">PozisyonBilgileri</span><br/><br/>'+veriler[1].PozisyonBigileri + '</div>'+
+    '</div>'+
+    '</div>'
+
+}
+function veri22(){
+    document.getElementById("orta10").innerHTML="";
+
+    document.getElementById("orta10").innerHTML='<div class="orta10">'+
+    '<div class="resim2"><img src="../img/starbucks.png"></div>' +
+    '<div class="bilgiler">'+
+    '<div class="nitelikler2">'+  '<div class="y4">Genel Nitelikler</div><br/>'+veriler[2].Genelnitelikler +'</div>'+
+    '<div class="istanitim2"><span class="y5">İŞ TANITIMI</span><br/><br/>'+ veriler[2].isTanitim + '</div>'+
+    '<div class="adaykriterleri"><span class="y6">Aday Kriterleri</span><br/><br/>'+ veriler[2].AdayKriterleri+ '</div>'+
+    '<div class="pozisyonbilgileri"><span class="y6">PozisyonBilgileri</span><br/><br/>'+veriler[2].PozisyonBigileri + '</div>'+
+    '</div>'+
+    '</div>'
+
+}
+function veri23(){
+    document.getElementById("orta10").innerHTML="";
+
+    document.getElementById("orta10").innerHTML='<div class="orta10">'+
+    '<div class="resim2"><img src="../img/aksa.png"></div>' +
+    '<div class="bilgiler">'+
+    '<div class="nitelikler2">'+  '<div class="y4">Genel Nitelikler</div><br/>'+veriler[3].Genelnitelikler +'</div>'+
+    '<div class="istanitim2"><span class="y5">İŞ TANITIMI</span><br/><br/>'+ veriler[3].isTanitim + '</div>'+
+    '<div class="adaykriterleri"><span class="y6">Aday Kriterleri</span><br/><br/>'+ veriler[3].AdayKriterleri+ '</div>'+
+    '<div class="pozisyonbilgileri"><span class="y6">PozisyonBilgileri</span><br/><br/>'+veriler[3].PozisyonBigileri + '</div>'+
+    '</div>'+
+    '</div>'
+
+}
+function veri24(){
+    document.getElementById("orta10").innerHTML="";
+
+    document.getElementById("orta10").innerHTML='<div class="orta10">'+
+    '<div class="resim2"><img src="../img/alotech.png"></div>' +
+    '<div class="bilgiler">'+
+    '<div class="nitelikler2">'+  '<div class="y4">Genel Nitelikler</div><br/>'+veriler[4].Genelnitelikler +'</div>'+
+    '<div class="istanitim2"><span class="y5">İŞ TANITIMI</span><br/><br/>'+ veriler[4].isTanitim + '</div>'+
+    '<div class="adaykriterleri"><span class="y6">Aday Kriterleri</span><br/><br/>'+ veriler[4].AdayKriterleri+ '</div>'+
+    '<div class="pozisyonbilgileri"><span class="y6">PozisyonBilgileri</span><br/><br/>'+veriler[4].PozisyonBigileri + '</div>'+
+    '</div>'+
+    '</div>'
+
+}
+function veri25(){
+    document.getElementById("orta10").innerHTML="";
+
+    document.getElementById("orta10").innerHTML='<div class="orta10">'+
+    '<div class="resim2"><img src="../img/tepeguvenlik.png"></div>' +
+    '<div class="bilgiler">'+
+    '<div class="nitelikler2">'+  '<div class="y4">Genel Nitelikler</div><br/>'+veriler[5].Genelnitelikler +'</div>'+
+    '<div class="istanitim3"><span class="y5">İŞ TANITIMI</span><br/><br/>'+ veriler[5].isTanitim + '</div>'+
+    '<div class="adaykriterleri"><span class="y6">Aday Kriterleri</span><br/><br/>'+ veriler[5].AdayKriterleri+ '</div>'+
+    '<div class="pozisyonbilgileri"><span class="y6">PozisyonBilgileri</span><br/><br/>'+veriler[5].PozisyonBigileri + '</div>'+
+    '</div>'+
+    '</div>'
+
+}
+function veri26(){
+    document.getElementById("orta10").innerHTML="";
+
+    document.getElementById("orta10").innerHTML='<div class="orta10">'+
+    '<div class="resim2"><img src="../img/caretta.png"></div>' +
+    '<div class="bilgiler">'+
+    '<div class="nitelikler3">'+  '<div class="y4">Genel Nitelikler</div><br/>'+veriler[6].Genelnitelikler +'</div>'+
+    '<div class="istanitim4"><span class="y5">İŞ TANITIMI</span><br/><br/>'+ veriler[6].isTanitim + '</div>'+
+    '<div class="adaykriterleri"><span class="y6">Aday Kriterleri</span><br/><br/>'+ veriler[6].AdayKriterleri+ '</div>'+
+    '<div class="pozisyonbilgileri"><span class="y6">PozisyonBilgileri</span><br/><br/>'+veriler[6].PozisyonBigileri + '</div>'+
+    '</div>'+
+    '</div>'
+
+}
+function veri27(){
+    document.getElementById("orta10").innerHTML="";
+
+    document.getElementById("orta10").innerHTML='<div class="orta10">'+
+    '<div class="resim2"><img src="../img/dogusteknoloji.png"></div>' +
+    '<div class="bilgiler">'+
+    '<div class="nitelikler5">'+  '<div class="y4">Genel Nitelikler</div><br/>'+veriler[7].Genelnitelikler +'</div>'+
+    '<div class="adaykriterleri2"><span class="y6">Aday Kriterleri</span><br/><br/>'+ veriler[7].AdayKriterleri+ '</div>'+
+    '<div class="pozisyonbilgileri"><span class="y6">PozisyonBilgileri</span><br/><br/>'+veriler[7].PozisyonBigileri + '</div>'+
+    '</div>'+
+    '</div>'
+
+}
+function veri50(){
+    document.getElementById("orta10").innerHTML="";
+
+    document.getElementById("orta10").innerHTML='<div class="orta10">'+
+    '<div class="resim2"><img src="../img/dogusteknoloji.png"></div>' +
+    '<div class="bilgiler">'+
+    '<div class="nitelikler">'+  '<div class="y4">Genel Nitelikler</div><br/>'+localStorage.getItem('input5') +'</div>'+
+    '<div class="istanitim4"><span class="y5">İŞ TANITIMI</span><br/><br/>'+ localStorage.getItem('input4') + '</div>'+
+    '<div class="adaykriterleri2"><span class="y6">Aday Kriterleri</span><br/><br/>Tecrübe:'+ localStorage.getItem('input6')+ '<br/> Eğitim Seviyesi:'+localStorage.getItem('input7')+'</div>'+
+    '<div class="pozisyonbilgileri"><span class="y6">PozisyonBilgileri</span><br/><br/>Firma Sektörü:'+ localStorage.getItem('input8')+ '<br/>Departman:'+localStorage.getItem('input9')+'<br/>Çalışma Şekli: '+localStorage.getItem('input90')+'<br/>Personel Sayisi:'+localStorage.getItem('input91')+'<br/>Ülke/Şehir:'+localStorage.getItem('input92')+'</div>'+
+    '</div>'+
+    '</div>'
+
+
+
+}
+function veri52(){
+    alert(1)
+    document.getElementById("stajerilanlariGenel").innerHTML="";
+
+    document.getElementById("stajerilanlariGenel").innerHTML='<div class="orta10">'+
+    '<div class="resim2"><img src="../img/dogusteknoloji.png"></div>' +
+    '<div class="bilgiler">'+
+    '<div class="nitelikler">'+  '<div class="y4">Genel Nitelikler</div><br/>'+localStorage.getItem('input5') +'</div>'+
+    '<div class="istanitim4"><span class="y5">İŞ TANITIMI</span><br/><br/>'+ localStorage.getItem('input4') + '</div>'+
+    '<div class="adaykriterleri2"><span class="y6">Aday Kriterleri</span><br/><br/>Tecrübe:'+ localStorage.getItem('input6')+ '<br/> Eğitim Seviyesi:'+localStorage.getItem('input7')+'</div>'+
+    '<div class="pozisyonbilgileri"><span class="y6">PozisyonBilgileri</span><br/><br/>Firma Sektörü:'+ localStorage.getItem('input8')+ '<br/>Departman:'+localStorage.getItem('input9')+'<br/>Çalışma Şekli: '+localStorage.getItem('input90')+'<br/>Personel Sayisi:'+localStorage.getItem('input91')+'<br/>Ülke/Şehir:'+localStorage.getItem('input92')+'</div>'+
+    '</div>'+
+    '</div>'
+
+
+
+}
+function veri40(){
+    document.getElementById("orta10").innerHTML="";
+    document.getElementById("orta10").innerHTML='<div class="stajerinresmi"></div>'+
+    '<div class="stajerbilgileri"><span class="y14">Ad Soyad: </span>'+ listeleme[0].ad+'<br/><span class="y14">Okul:</span> '+listeleme[0].okul+'<br/><span class="y14">Bölüm:</span>  '+listeleme[0].bolum+'<br/><span class="y14">Yabancı Dil:</span>  '+listeleme[0].yabanciDil+'<br/><span class="y14">İletisim Bilgieri:</span>  '+listeleme[0].iletisimbilgileri+'<br/><span class="y14">Adres Bilgieri:</span>  '+listeleme[0].AdresBilgileri+'</div>'
+}
+function veri41(){
+   
+    document.getElementById("orta10").innerHTML="";
+    document.getElementById("orta10").innerHTML='<div class="stajerinresmi"></div>'+
+    '<div class="stajerbilgileri"><span class="y14">Ad Soyad: </span>'+ listeleme[1].ad+'<br/><span class="y14">Okul:</span> '+listeleme[1].okul+'<br/><span class="y14">Bölüm:</span>  '+listeleme[1].bolum+'<br/><span class="y14">Yabancı Dil:</span>  '+listeleme[1].yabanciDil+'<br/><span class="y14">İletisim Bilgieri:</span>  '+listeleme[1].iletisimbilgileri+'<br/><span class="y14">Adres Bilgieri:</span>  '+listeleme[1].AdresBilgileri+'</div>'
+}
+function veri42(){
+    document.getElementById("orta10").innerHTML="";
+    document.getElementById("orta10").innerHTML='<div class="stajerinresmi"></div>'+
+    '<div class="stajerbilgileri"><span class="y14">Ad Soyad: </span>'+ localStorage.getItem('input11')+'<br/><span class="y14">Okul:</span> '+localStorage.getItem('input12')+'<br/><span class="y14">Bölüm:</span>  '+localStorage.getItem('input13')+'<br/><span class="y14">Yabancı Dil:</span>  '+localStorage.getItem('input14')+'<br/><span class="y14">İletisim Bilgileri:</span>Tel No:  '+localStorage.getItem('input15')+'<br/><span class="y14">E-posta:</span>  '+localStorage.getItem('input16')+'<br/><span class="y14">Adres Bilgileri:</span>  '+ localStorage.getItem('input17')+'</div>'
 }
 
 var listeleme=[
@@ -448,11 +604,13 @@ AdresBilgileri:"Celiktepe Mah Arnavut sokak No:5 Kağıthane/İstanbul",
 ]
 function stajerilanlari(){
 
-    var listeleme3='<div class="enust"> <a href="index.html"><div class="logo"></div></a><!--logo div--><div class="menu"> <div class="menu1"><a href="stajerilanlari.html">Stajer İlanlarını Listeleme </a></div>  <div class="menu1"><a href="stajilanlari.html">Staj İlanlarını Listeleme</a></div><div class="menu1">Stajer tarafından İlan yayınla</div><div class="girisYap"><a href="UyeGiris.html">Giris Yap</a></div> <div class="uyeOl"><a href="UyeOl.html"> Uye Ol</a></div></div><!--menu div--></div><!--enust-->' +
+    var listeleme3='<div class="enust"> <a href="index.html"><div class="logo"></div></a><!--logo div--><div class="menu"> <div class="menu1"><a href="stajerilanlari.html">Stajer İlanlarını Listeleme </a></div>  <div class="menu1"><a href="stajilanlari.html">Staj İlanlarını Listeleme</a></div>  <div class="uyeler" id="uyeler"><div class="girisYap"><a href="UyeGiris.html">Giris Yap</a></div> <div class="uyeOl"><a href="UyeOl.html"> Uye Ol</a></div></div></div><!--menu div--></div><!--enust-->' +
     '<div class="stajerGenel"  id="stajerGenel">'+ 
 '<div class="filtreler2"></div><!--filtreler2 div-->'+
-'<div class="orta11" id="orta11">Stajer İlanları<hr/><div class="stajerilan1">Stajer: <span class="y12" onclick="veri30()">'+listeleme[0].ad+'<br/>'+listeleme[0].okul +'<br/>'+listeleme[0].bolum +'</span></div><hr/>'+
-'<hr/><div class="stajerilan1">Stajer: <span class="y12" onclick="veri31()">'+listeleme[1].ad+'<br/>'+listeleme[1].okul +'<br/>'+listeleme[1].bolum +'</span></div><hr/>'+
+'<div class="orta11" id="orta11">Stajer İlanları<hr/><div class="stajerilan1">Stajer: <span class="y12" onclick="veri30()"><a href="#">'+listeleme[0].ad+'<br/>'+listeleme[0].okul +'<br/>'+listeleme[0].bolum +'</a></span></div><hr/>'+
+'<hr/><div class="stajerilan1">Stajer: <span class="y12" onclick="veri31()"><a href="#">'+listeleme[1].ad+'<br/>'+listeleme[1].okul +'<br/>'+listeleme[1].bolum +'</a></span></div><hr/>'+
+'<div class="stajerilan1">Stajer: <span class="y12" onclick="veri33()"><a href="#">'+localStorage.getItem('input11')+'<br/>'+localStorage.getItem('input12') +'<br/>'+localStorage.getItem('input13')+'</a></span></div>'+localStorage.getItem('cizgi')+
+
 '</div><!--orta11div--></div>'+
 '<div class="alt"><div class="alt1"><a href="hakkimizda.html">Hakkkımızda</a></div><div class="alt1"><a href="iletisim.html">İletişim</a></div><div class="alt1">Yardim</div><div class="alt2"><img src="img/icon14.png"><img src="img/icon15.png"><img src="img/icon16.png"><img src="img/icon18.png"><img src="img/icon19.png"></div></div><!--alt div-->'
 
@@ -464,7 +622,7 @@ function veri30(){
 
     document.getElementById("stajerGenel").innerHTML="";
     document.getElementById("stajerGenel").innerHTML='<div class="stajerinresmi"></div>'+
-    '<div class="stajerbilgileri"><span class="y14">Ad Soyad: </span>'+ listeleme[0].ad+'<br/><span class="y14">Okul:</span> '+listeleme[0].okul+'<br/><span class="y14">Bölüm:</span>  '+listeleme[0].bolum+'<br/><span class="y14">Yabancı Dil:</span>  '+listeleme[0].yabanciDil+'<br/><span class="y14">İletisim Bilgieri:</span>  '+listeleme[0].iletisimbilgileri+'<br/><span class="y14">Adres Bilgieri:</span>  '+listeleme[0].AdresBilgileri+'</div>'
+    '<div class="stajerbilgileri"><span class="y14">Ad Soyad: </span>'+ listeleme[0].ad+'<br/><span class="y14">Okul:</span> '+listeleme[0].okul+'<br/><span class="y14">Bölüm:</span>  '+listeleme[0].bolum+'<br/><span class="y14">Yabancı Dil:</span>  '+listeleme[0].yabanciDil+'<br/><span class="y14">İletisim Bilgileri:</span>  '+listeleme[0].iletisimbilgileri+'<br/><span class="y14">Adres Bilgileri:</span>  '+listeleme[0].AdresBilgileri+'</div>'
 }
 
 
@@ -472,7 +630,14 @@ function veri31(){
    
     document.getElementById("stajerGenel").innerHTML="";
     document.getElementById("stajerGenel").innerHTML='<div class="stajerinresmi"></div>'+
-    '<div class="stajerbilgileri"><span class="y14">Ad Soyad: </span>'+ listeleme[1].ad+'<br/><span class="y14">Okul:</span> '+listeleme[1].okul+'<br/><span class="y14">Bölüm:</span>  '+listeleme[1].bolum+'<br/><span class="y14">Yabancı Dil:</span>  '+listeleme[1].yabanciDil+'<br/><span class="y14">İletisim Bilgieri:</span>  '+listeleme[1].iletisimbilgileri+'<br/><span class="y14">Adres Bilgieri:</span>  '+listeleme[1].AdresBilgileri+'</div>'
+    '<div class="stajerbilgileri"><span class="y14">Ad Soyad: </span>'+ listeleme[1].ad+'<br/><span class="y14">Okul:</span> '+listeleme[1].okul+'<br/><span class="y14">Bölüm:</span>  '+listeleme[1].bolum+'<br/><span class="y14">Yabancı Dil:</span>  '+listeleme[1].yabanciDil+'<br/><span class="y14">İletisim Bilgileri:</span>  '+listeleme[1].iletisimbilgileri+'<br/><span class="y14">Adres Bilgileri:</span>  '+listeleme[1].AdresBilgileri+'</div>'
+}
+function veri33(){
+    document.getElementById("stajerGenel").innerHTML="";
+    document.getElementById("stajerGenel").innerHTML='<div class="stajerinresmi"></div>'+
+    '<div class="stajerbilgileri"><span class="y14">Ad Soyad: </span>'+ localStorage.getItem('input11')+'<br/><span class="y14">Okul:</span> '+localStorage.getItem('input12')+'<br/><span class="y14">Bölüm:</span>  '+localStorage.getItem('input13')+'<br/><span class="y14">Yabancı Dil:</span>  '+localStorage.getItem('input14')+'<br/><span class="y14">İletisim Bilgileri:</span>  '+localStorage.getItem('input15')+'<br/><span class="y14">Adres Bilgileri:</span>  '+localStorage.getItem('input16')+'</div>'
+
+
 }
 
 function uyeol(){
@@ -498,14 +663,48 @@ else if(localStorage.getItem('KullaniciAdi') == document.getElementById('kullani
 
 }
 function ilaneklelist(){
-    var listeleme4='    <div class="kutu1"><input type="file" class="input"><div class="kutu2"><span class="o2">İlan adı:</span><textarea type="text"  class="input1" id="input1"></textarea><span class="o2">Firma adı:</span><textarea type="text"  class="input1" id="input2"></textarea><span class="o2">Şehir:</span><textarea type="text"  class="input1" id="input3"></textarea><div id="cizgi4"><hr></div><div class="ilanekle" onclick="ilanekle2()">İlan Ekle</div>   </div></div>';
+    var listeleme4='   <div class="enust"> <a href="admin/admin.html"> <div class="logo"></div></a><!--logo div--><div class="menu"><div class="y29"><a href="admin/admin.html">Admin paneli anasayfa için tıklayınız</a></div><div class="uyeler" id="uyeler"><div class="girisYap"><a href="../UyeGiris.html">Giris Yap</a></div>    <div class="uyeOl"><a href="../UyeOl.html"> Uye Ol</a></div></div>    </div><!--menu div-->     </div> <!--enust div-->'+              
+
+    '<div class="kutu1"><input type="file" class="input10">'+
+    '<div class="kutu2"><span class="o2">İlan adı:</span><textarea type="text"  class="input1" id="input1"></textarea><span class="o2">Firma adı:</span><textarea type="text"  class="input1" id="input2"></textarea><span class="o2">Şehir:</span><textarea type="text"  class="input1" id="input3"></textarea>  </div><div class="kutu5"><span class="o2">İş tanıtımı:</span><br/><br/><textarea type="text"   id="input4"></textarea></div><div class="kutu6"><span class="o2">Genel Nitelikler</span><br/><br/><textarea type="text"   id="input5"></textarea></div><div class="kutu7"><span class="o7">Aday Kriterleri</span><br/><br/><span class="o8">Tecrübe</span><br/><textarea type="text"   id="input6"></textarea><br/><br/><br/><span class="o8">Eğitim seviyesi:</span><br/><textarea type="text"   id="input7"></textarea><div class="ilanekle" onclick="ilanekle2()">İlan Ekle</div> </div><div class="kutu8">'+
+    '<span class="o7">Pozisyon Bilgileri</span><br/><br/><span class="o8">Firma Sektörü:</span><textarea type="text"   id="input8"></textarea><span class="o8">Departman:</span><textarea type="text"   id="input9"></textarea><span class="o8">Çalışma Şekli:</span><textarea type="text"   id="input90"></textarea><span class="o8">Personel Sayısı:</span><textarea type="text"   id="input91"></textarea><span class="o8">Ülke/Şehir</span><textarea type="text"   id="input92"></textarea></div></div>';
     document.body.innerHTML=listeleme4;
 }
 function ilanekle2(){
     localStorage.setItem('input1',document.getElementById('input1').value);
     localStorage.setItem('input2',document.getElementById('input2').value);
     localStorage.setItem('input3',document.getElementById('input3').value);
-    localStorage.setItem('cizgi',document.getElementById('cizgi4').innerHTML);
+    localStorage.setItem('input4',document.getElementById('input4').value);
+    localStorage.setItem('input5',document.getElementById('input5').value);
+    localStorage.setItem('input6',document.getElementById('input6').value);
+    localStorage.setItem('input7',document.getElementById('input7').value);
+    localStorage.setItem('input8',document.getElementById('input8').value);
+    localStorage.setItem('input9',document.getElementById('input9').value);
+    localStorage.setItem('input90',document.getElementById('input90').value);
+    localStorage.setItem('input91',document.getElementById('input91').value);
+    localStorage.setItem('input92',document.getElementById('input92').value);
    window.location.href='admin/admin.html'
+   alert("İlanınız başarıyla eklenmiştir")
+}
+
+function ilaneklelist2(){
+    var listeleme5='    <div class="stajereklegenel">'+
+    '<div class="enust"> <a href="admin/admin.html"> <div class="logo"></div></a><!--logo div--><div class="menu"><div class="y29"><a href="admin/admin.html">Admin paneli anasayfa için tıklayınız</a></div><div class="uyeler" id="uyeler"><div class="girisYap"><a href="../UyeGiris.html">Giris Yap</a></div>    <div class="uyeOl"><a href="../UyeOl.html"> Uye Ol</a></div></div>    </div><!--menu div-->     </div> <!--enust div-->'+                  
+    '<div class="kutu3"><span class="o2">Ad Soyad:</span><textarea type="text"  class="input1" id="input11"></textarea><span class="o2">Okul:</span><textarea type="text"  class="input1" id="input12"></textarea><span class="o2">Bölüm: </span><textarea type="text"  class="input1" id="input13"></textarea><span class="o2">Yabancı Dil:</span><textarea type="text"  class="input1" id="input14"></textarea><div id="cizgi4"><hr></div>  </div>'+
+    '<div class="kutu4"><span class="o2">Tel No:</span><textarea type="text"  class="input1" id="input15"></textarea><span class="o2">E-Posta </span><textarea type="text"  class="input1" id="input16"></textarea><span class="o2">Adres Bilgileri:</span><textarea type="text"  class="input1" id="input17"></textarea><div id="cizgi4"><hr></div><div class="ilanekle" onclick="ilanekle3()">İlan Ekle</div>   </div>'+
+    '</div>';
+    document.body.innerHTML=listeleme5;
+}
+function ilanekle3(){
+    localStorage.setItem('input11',document.getElementById('input11').value);
+    localStorage.setItem('input12',document.getElementById('input12').value);
+    localStorage.setItem('input13',document.getElementById('input13').value);
+    localStorage.setItem('input14',document.getElementById('input14').value);
+    localStorage.setItem('input15',document.getElementById('input15').value);
+    localStorage.setItem('input16',document.getElementById('input16').value);
+    localStorage.setItem('input17',document.getElementById('input17').value);
+    localStorage.setItem('cizgi',document.getElementById('cizgi4').innerHTML);
+
+   window.location.href='admin/admin.html';
    alert("İlanınız başarıyla eklenmiştir")
 }
