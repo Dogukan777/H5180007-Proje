@@ -203,15 +203,27 @@ PozisyonBigileri:"<span class='y7'>Firma Sektörü:</span> Bilişim, Bilgi Tekno
 "<span class='y7'>Ülke/Şehir:</span> İstanbul(Avr.)<br/>",
 
     },
+   
 
 ]
+
+
 function tasarimGetir(){ 
 
 var listeleme2='<div class="enust"> <a href="index.html"><div class="logo"></div></a><!--logo div--><div class="menu"> <div class="menu1"><a href="stajerilanlari.html">Stajer İlanlarını Listeleme </a></div>  <div class="menu1"><a href="stajilanlari.html">Staj İlanlarını Listeleme</a></div><div class="menu1">Stajer tarafından İlan yayınla</div><div class="girisYap"><a href="UyeGiris.html">Giris Yap</a></div> <div class="uyeOl"><a href="UyeOl.html"> Uye Ol</a></div></div><!--menu div--></div><!--enust-->'+      
 '<div class="stajerilanlariGenel"  id="stajerilanlariGenel">'+ 
 '<div class="filtreler"><input type="text" id="aramayap"><div id="ara">ARA</div><div class="filtre"> Ülke-Şehir-İlçe</div><div class="filtre">Firma Sektörü</div><div class="filtre">İlan Kategorileri</div><div class="filtre">Pozisyon</div><div class="filtre">Departman</div><div class="filtre">Çalışma Şekli</div><div class="filtre">Eğitim Seviyesi</div><div class="filtre">İş Tecrübesi</div></div><!--filtrelerdiv-->'+ 
-'<div class="ilanlar" id="ilanlar"><span class="y8">Staj İlanları</span><hr><div class="ilan1"><span class="y3" onclick="veri1()">'+ veriler[0].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri2()">'+ veriler[1].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri3()">'+ veriler[2].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri4()">'+ veriler[3].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri5()">'+ veriler[4].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri6()">'+ veriler[5].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri7()">'+ veriler[6].ad + '</span><hr></div><div class="ilan1"><span class="y3" onclick="veri8()">'+ veriler[7].ad + '</span><hr></div></div></div><div class="alt"><div class="alt1"><a href="hakkimizda.html">Hakkkımızda</a></div><div class="alt1"><a href="iletisim.html">İletişim</a></div><div class="alt1">Yardim</div><div class="alt2"><img src="img/icon14.png"><img src="img/icon15.png"><img src="img/icon16.png"><img src="img/icon18.png"><img src="img/icon19.png"></div></div><!--alt div-->'
+'<div class="ilanlar" id="ilanlar"><span class="y8">Staj İlanları</span><hr><div class="ilan1"><span class="y3" onclick="veri1()">'+ veriler[0].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri2()">'+ veriler[1].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri3()">'+ veriler[2].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri4()">'+ veriler[3].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri5()">'+ veriler[4].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri6()">'+ veriler[5].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri7()">'+ veriler[6].ad + '</span><hr></div><div class="ilan1"><span class="y3" onclick="veri8()">'+ veriler[7].ad + '</span><hr>'+
+'<div class="ilan1">'+
+localStorage.getItem('input1')+'<br/>'+
+  localStorage.getItem('input2')+'<br/>'+
+  localStorage.getItem('input3')+'<br/>'+
+  localStorage.getItem('cizgi')+'<br/>'+
+  '</div>'+
+'</div></div></div><div class="alt"><div class="alt1"><a href="hakkimizda.html">Hakkkımızda</a></div><div class="alt1"><a href="iletisim.html">İletişim</a></div><div class="alt1">Yardim</div><div class="alt2"><img src="img/icon14.png"><img src="img/icon15.png"><img src="img/icon16.png"><img src="img/icon18.png"><img src="img/icon19.png"></div></div><!--alt div-->'
 document.body.innerHTML=listeleme2;
+
+
 }
 
 function veri1(){
@@ -355,28 +367,34 @@ function isim()
 {
     document.getElementById("name").value=""
 }
-function uyeGiris(){
 
-    if(document.getElementById("kullaniciAdi").value=="admin" && document.getElementById("sifre2").value=="admin")
-    {
-        window.location.assign("admin/admin.html")
-    }
-    else{
-        document.getElementById("sifre2").type="text"
-        document.getElementById("sifre2").value="Sifreniz"
-        
-        document.getElementById("kullaniciAdi").value="Kullanici Adiniz"
-    }
-}
 
 function admin(){
-    
+ 
 
 
   var admin2= '<div id="admingenel"> <div class="enust"> <a href="admin.html"> <div class="logo"></div></a><!--logo div--><div class="menu"><div class="girisYap"><a href="../UyeGiris.html">Giris Yap</a></div>    <div class="uyeOl"><a href="../UyeOl.html"> Uye Ol</a></div>    </div><!--menu div-->     </div> <!--enust div-->'+                   
   '<div id="orta10"><div id="orta10sol"><div id="kontrol3"></div><div id="kontrol4"></div>'+
-  '<div class="ilanlar" id="ilanlar"><span class="y8">Stajer ilanları</span><hr><div class="ilan1"><span class="y3" onclick="veri20()">'+ veriler[0].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri21()">'+ veriler[1].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri22()">'+ veriler[2].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri23()">'+ veriler[3].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri24()">'+ veriler[4].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri25()">'+ veriler[5].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri26()">'+ veriler[6].ad + '</span><hr></div><div class="ilan1"><span class="y3" onclick="veri27()">'+ veriler[7].ad + '</span><hr></div></div>'
-  '</div>'+
+  '<div class="ilanlar2" id="ilanlar"><span class="y8">Stajer ilanları</span><hr><div class="ilan1"><span class="y3" onclick="veri20()">'+ veriler[0].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri21()">'+ veriler[1].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri22()">'+ veriler[2].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri23()">'+ veriler[3].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri24()">'+ veriler[4].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri25()">'+ veriler[5].ad + '</span></div><hr><div class="ilan1"><span class="y3" onclick="veri26()">'+ veriler[6].ad + '</span><hr></div><div class="ilan1"><span class="y3" onclick="veri27()">'+ veriler[7].ad + '</span><hr></div>'+
+
+'<div class="ilan1" id="ilan3">'+   
+
+localStorage.getItem('input1')+'<br/>'+
+localStorage.getItem('input2')+'<br/>'+
+localStorage.getItem('input3')+'<br/>'+
+
+
+
+
+
+
+'</div>'+
+'<a href="../ilanekle.html"><div class="ekle" >İlan Ekle</div></a></div></div>'+
+
+
+  
+  
+  '</div>'
   
   '<div id="orta10sag">'+
   '</div>' +
@@ -387,6 +405,7 @@ function admin(){
    
     document.body.innerHTML=admin2
 }
+
 function veri20(){
     document.getElementById("orta10").innerHTML="";
 
@@ -454,4 +473,39 @@ function veri31(){
     document.getElementById("stajerGenel").innerHTML="";
     document.getElementById("stajerGenel").innerHTML='<div class="stajerinresmi"></div>'+
     '<div class="stajerbilgileri"><span class="y14">Ad Soyad: </span>'+ listeleme[1].ad+'<br/><span class="y14">Okul:</span> '+listeleme[1].okul+'<br/><span class="y14">Bölüm:</span>  '+listeleme[1].bolum+'<br/><span class="y14">Yabancı Dil:</span>  '+listeleme[1].yabanciDil+'<br/><span class="y14">İletisim Bilgieri:</span>  '+listeleme[1].iletisimbilgileri+'<br/><span class="y14">Adres Bilgieri:</span>  '+listeleme[1].AdresBilgileri+'</div>'
+}
+
+function uyeol(){
+
+    localStorage.setItem('KullaniciAdi',document.getElementById('kullaniciAdi').value);
+    localStorage.setItem('sifre',document.getElementById('sifre').value);
+    window.location.href = 'UyeGiris.html';
+
+}
+function uyeGiris(){
+if(document.getElementById("kullaniciAd").value=="admin"&&document.getElementById("sifre2").value=="admin" )
+{
+    window.location.href = 'admin/admin.html'
+}
+else if(localStorage.getItem('KullaniciAdi') == document.getElementById('kullaniciAd').value && localStorage.getItem('sifre') == document.getElementById('sifre2').value){
+   window.location.href = 'index.html'
+ 
+    
+    }
+    else {
+        alert('Kullanıcı adı veya Şifre hatalı !');
+    }
+
+}
+function ilaneklelist(){
+    var listeleme4='    <div class="kutu1"><input type="file" class="input"><div class="kutu2"><span class="o2">İlan adı:</span><textarea type="text"  class="input1" id="input1"></textarea><span class="o2">Firma adı:</span><textarea type="text"  class="input1" id="input2"></textarea><span class="o2">Şehir:</span><textarea type="text"  class="input1" id="input3"></textarea><div id="cizgi4"><hr></div><div class="ilanekle" onclick="ilanekle2()">İlan Ekle</div>   </div></div>';
+    document.body.innerHTML=listeleme4;
+}
+function ilanekle2(){
+    localStorage.setItem('input1',document.getElementById('input1').value);
+    localStorage.setItem('input2',document.getElementById('input2').value);
+    localStorage.setItem('input3',document.getElementById('input3').value);
+    localStorage.setItem('cizgi',document.getElementById('cizgi4').innerHTML);
+   window.location.href='admin/admin.html'
+   alert("İlanınız başarıyla eklenmiştir")
 }

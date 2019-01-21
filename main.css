@@ -1,13 +1,13 @@
 #genel{width:100%;height:1015px;}
 #genel2{width:100%;height:700px;}
 .enust{width:100%;height:100px;}
-.menu{width:70%;height:60px;float:left;margin-left:2%;margin-top:1%;}
+.menu{width:70%;height:60px;float:left;margin-left:2%;margin-top:0.5%;}
 .menu1{width:15%;height:60px;float:left;margin-left:2%;color:black;font-size:17px}
 .menu1 a{color:black;text-decoration:none}
 .logo{width:200px;height:60px;float:left;background-image:url("img/logo.png");background-size:100%;background-repeat:no-repeat;margin-left:3%;margin-top:1%}
 
-.uyeOl{width:15%;height:58px;float:left;margin-left:2%;color:black;font-size:35px}
-.girisYap{width:15%;height:58px;float:left;margin-left:15%;color:black;font-size:35px}
+.uyeOl{width:120px;height:70px;float:left;margin-left:25px;color:black;font-size:30px;border:1px solid blue;}
+.girisYap{width:140px;height:70px;float:left;color:black;font-size:30px;border:1px solid red;}
 .UyeGirisArkaPlan{width:100%;height:650px;}
 .uyeGiris{width:340px;height:220px;margin:0 auto;background:white;opacity:0.7;text-decoration:none;}
 a .uyegiris{text-decoration: none}
@@ -20,7 +20,7 @@ a:hover .uyeGiris{opacity:1}
 .Login{width:370px;height:280px;margin:0 auto;margin-top:100px;}
 
 .uyeOl3{width:270px;height:35px;background-color:blue;margin:0 auto;margin-top:25px;border-radius:3px;color:white;font-size:25px;text-align: center;padding-top:5px}
-.orta{width:100%;height:200px;border:1px solid black;background-image:url("img/background4.png");background-size:100%}
+.orta{width:100%;height:200px;background-image:url("img/background4.png");background-size:100%}
 .orta2{width:94%;height:260px;font-size:20px;padding:3%;}
 .baziilanlar{width:100%;height:30px;font-weight:550;color:grey}
 .orta3{width:23%;height:230px;border:1px solid grey;float:left;margin:10px;margin-top:25px}
@@ -46,25 +46,27 @@ a .kullaniciAdi{text-decoration:none;}
 #kontrol4{display:none;}
 
 
-.stajerilanlariGenel{width:100%;height:1130px;margin:0 auto;border:1px solid red}
-.ilanlar{width:60%;height:950px;float:left;margin-left:3%;color:black;font-size:20px;padding:2%;margin-top:30px;border:1px solid black}
+.stajerilanlariGenel{width:100%;height:1190px;margin:0 auto}
+.ilanlar{width:60%;height:950px;float:left;margin-left:3%;color:black;font-size:20px;padding:2%;margin-top:30px;}
+.ilanlar2{width:90%;height:950px;float:left;margin-left:3%;color:black;font-size:20px;padding:2%;margin-top:30px;}
 
-.ilan1{width:100%;height:100px;margin-top:1%}
+.ilan1{width:100%;height:100px;margin-top:1%;border:1px solid black}
+
 
 .y8{color:blue;font-size:24px;font-weight:550}
 
 .ilanlarGenel{width:80%;height:1000px;margin-left:10%}
-.resim{width:30%;height:400px;float:left;margin-top:40px;border:1px solid blue}
+.resim{width:30%;height:400px;float:left;margin-top:40px;}
 .bilgiler{width:69%;height:1000px;float:left}
-.nitelikler{width:80%;height:360px;margin:0 auto;margin-top:5%;color:grey;font-size:17px;border:1px solid red}
+.nitelikler{width:80%;height:360px;margin:0 auto;margin-top:5%;color:grey;font-size:17px;}
 .nitelikler li{margin-bottom:-9px}
 .y4{color:blue;font-weight:500;font-size:20px;width:100%;height:30px;}
-.istanitim{width:80%;height:320px;margin:0 auto;margin-top:10px;color:grey;font-size:17px;border:1px solid black}
+.istanitim{width:80%;height:320px;margin:0 auto;margin-top:10px;color:grey;font-size:17px;}
 .y5{color:blue;font-size:20px;font-weight:500}
-.adaykriterleri{width:80%;height:140px;;margin:0 auto;margin-top:10px;font-size:18px;background-color:#dfdfdf;border:1px solid grey}
+.adaykriterleri{width:80%;height:140px;;margin:0 auto;margin-top:10px;font-size:18px;background-color:#dfdfdf;}
 .y6{margin-left:40%;color:blue;font-size:20px;font-weight:500}
 .y7{font-weight:600}
-.pozisyonbilgileri{width:80%;height:180px;margin:0 auto;font-size:18px;background-color:#dfdfdf;margin-top:15px;border:1px solid green}
+.pozisyonbilgileri{width:80%;height:180px;margin:0 auto;font-size:18px;background-color:#dfdfdf;margin-top:15px}
 .istanitim2{width:80%;height:130px;margin:0 auto;margin-top:10px;color:grey;font-size:17px;}
 .nitelikler2{width:80%;height:420px;margin:0 auto;margin-top:5%;color:grey;font-size:17px}
 .nitelikler2 li{margin-bottom:-9px}
@@ -92,17 +94,29 @@ a .kullaniciAdi{text-decoration:none;}
 
 
 
-#admingenel{width:100%;height:1250px;border:1px solid red;margin:0 auto;}
-#orta10{width:100%;height:1100px;border:1px solid blue;}
-#orta10sol{width:48%;height:1100px;border:1px solid black;float:left}
-#orta10sag{width:48%;height:1100px;border:1px solid green;float:left;margin-left:3%}
+#admingenel{width:100%;height:1450px;border:1px solid red;margin:0 auto;}
+#orta10{width:100%;height:1100px;}
+#orta10sol{width:40%;height:1300px;float:left;border:1px solid blue}
+#orta10sag{width:48%;height:1100px;float:left;margin-left:3%}
 #sil{width:30px;height:30px;background-color:black;}
 
 
-.filtreler2{width:25%;height:600px;border:1px solid black;float:left;margin:25px}
-#orta11{width:60%;height:580px;border:1px solid blue;float:left;margin-top:2%;color:blue;padding:1%;font-weight:550;font-size:22px;margin-left:3%}
-.stajerilan1{width:90%;height:90px;border:1px solid red;font-size:22px;color:black;font-weight:500;margin-top:10px;padding-top:10px}
-.stajerinresmi{width:25%;height:400px;border:1px solid blue;float:left}
-.stajerGenel{width:100%;height:650px;border:1px solid green;}
-.stajerbilgileri{float:left;width:60%;height:400px;border:1px solid blue;margin-left:50px;font-size:22px;padding:4%}
+.filtreler2{width:25%;height:600px;float:left;margin:25px}
+#orta11{width:60%;height:580px;float:left;margin-top:2%;color:blue;padding:1%;font-weight:550;font-size:22px;margin-left:3%}
+.stajerilan1{width:90%;height:90px;font-size:22px;color:black;font-weight:500;margin-top:10px;padding-top:10px}
+.stajerinresmi{width:25%;height:400px;float:left}
+.stajerGenel{width:100%;height:650px;}
+.stajerbilgileri{float:left;width:60%;height:400px;margin-left:50px;font-size:22px;padding:4%}
 .y14{font-weight:550}
+
+.ekle{width:80px;background:blue;height:30px;color:white;font-size:20px;border-radius:3px;padding:10px;margin:10px}
+.kutu1{width:100%;height:700px;border:1px solid blue;}
+.input1{width:250px;height:30px;float:left;margin-right:50px;font-size:16px;margin-top:20px}
+.ilanekle{width:100px;height:50px;background:blue;color:white;float:left;margin-left:350px;margin-top:10px}
+.input{float:left}
+#cizgi4{display:none}
+#ilansil{width:60px;background:blue;height:30px;color:white;font-size:20px;border-radius:3px;padding:10px;margin:10px}
+.uyeler{width:300px;height:70px;border:1px solid red;float:left;margin-left:15%}
+#kontrol6{display:none}
+.kutu2{width:300px;height:1000px;border:1px solid red;float:left}
+.o2{float:left}
